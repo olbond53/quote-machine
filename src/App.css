@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #2c3e50;
+  font-family: 'Shadows Into Light', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
+  background-color: #f5f5f5;
+  color: #2c3e50;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  top: 25vh;
+  max-width: 60vw;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+#text {
+  margin-top: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#author {
+  align-self: flex-end;
+  margin-right: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+#tweet-box {
+  width: 5rem;
+  height: 2.375rem;
+  background-color: #2c3e50;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  margin-inline-end: 3.05rem;
+}
+
+#tweet-box a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+#new-quote {
+  width: 9.3rem;
+  height: 2.375rem;
+  background-color: #2c3e50;
+  color: #f5f5f5;
+  margin-left: 3.05rem;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+#new-quote button {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 700;
+  background-color: #2c3e50;
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  border: none;
+}
+
+#tweet-quote:hover,
+#new-quote button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 740px) {
+  #new-quote {
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  #tweet-box {
+    margin: auto;
   }
 }
